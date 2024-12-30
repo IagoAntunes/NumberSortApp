@@ -198,29 +198,30 @@ fun Greeting() {
                     .fillMaxWidth()
                     .padding(top = 16.dp)
             ) {
-               Row(
-                   verticalAlignment = Alignment.CenterVertically
-               ) {
-                   Text(
-                       "SORTEAR",
-                       style = TextStyle(
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Text(
+                        "SORTEAR",
+                        style = TextStyle(
                             fontSize = 16.sp,
                             fontWeight = FontWeight.Bold,
-                       )
-                   )
-                   Image(
-                      painter = painterResource(id = R.drawable.ic_arrow_right),
-                      contentDescription = "Arrow",
-                      colorFilter = ColorFilter.tint(Color.White),
-                      modifier = Modifier
-                        .padding(start = 8.dp),
-                   )
-               }
+                        )
+                    )
+                    Image(
+                        painter = painterResource(id = R.drawable.ic_arrow_right),
+                        contentDescription = "Arrow",
+                        colorFilter = ColorFilter.tint(Color.White),
+                        modifier = Modifier
+                            .padding(start = 8.dp),
+                    )
+                }
             }
 
         }
     }
 }
+
 @Composable
 fun CustomTextField(
     modifier: Modifier = Modifier,
@@ -228,7 +229,7 @@ fun CustomTextField(
     value: String,
     readOnly: Boolean = false,
     onValueChange: (String) -> Unit,
-){
+) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
